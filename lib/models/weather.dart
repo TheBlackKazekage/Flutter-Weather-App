@@ -28,7 +28,7 @@ class Weather extends Equatable {
   Weather({this.condition, this.formattedCondition, this.minTemp, this.temp, this.maxTemp, this.locationId, this.created, this.lastUpdated, this.location}) :
         super ([condition, formattedCondition, minTemp, temp, maxTemp, locationId, created, lastUpdated, location]);
 
- static Weather fromJson(dynamic json) {
+  static Weather fromJson(dynamic json) {
    final consolidatedWeather = json['consolidatedWeather'][0];
 
    return Weather(
